@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
-// import TransitionalText from "./TransitionalText";
+
 import { Pill } from "lucide-react";
+import TransitionalText from "./TransitionalText";
 // import { CommandMenu } from "../command-menu";
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
               <div className='hero-content'>
                 <h1 className='mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl flex flex-wrap items-center gap-3'>
                   <span>Book your</span>{" "}
-                  {/* <TransitionalText className='text-blue-500' TEXTS={TEXTS} /> */}
+                  <TransitionalText className='text-blue-500' TEXTS={TEXTS} />
                   <br />
                   <span>sessions now</span>
                 </h1>
