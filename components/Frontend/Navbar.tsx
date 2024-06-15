@@ -28,6 +28,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -49,7 +50,6 @@ export default function Navbar() {
               className='h-8 w-auto'
               src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
               alt=''
-
             />
           </a>
         </div>
@@ -75,12 +75,12 @@ export default function Navbar() {
           </a>
         </PopoverGroup>
         <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-          <a
-            href='#'
+          <Link
+            href='/login'
             className='text-sm font-semibold leading-6 text-gray-50 bg-blue-500 py-3 px-6 rounded-md'
           >
             Log in <span aria-hidden='true'>&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog
